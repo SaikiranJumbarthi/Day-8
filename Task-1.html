@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form..</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Registration Form</legend>
+        <fieldset>
+        <legend>Student Details</legend>
+        <label for="Firstname">Firstname</label>
+        <input type="text" placeholder="Firstname" required>
+        <br>
+        <br>
+        <label for="Lastname">Lastname</label>
+        <input type="text" placeholder="Lastname" required>
+        <br>
+        <br>
+        <label for="Date Of Birth">Date of Birth</label>
+        <input type="date" min="2000-01-01" max="2006-12-31" required>
+        <br>
+        <br>
+        <label for="number">Mobile.no:</label>
+        <input type="number" pattern="[0-9] {10}" required>
+        <br>
+        <br>
+        <label for="Age">Age:</label>
+        <input type="number" placeholder="Age" min="18" max="60" required>
+        <br>
+        <br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" >male
+        <input type="radio" >female 
+        <br>
+        <br> 
+        <label for="Address">Address:</label>
+        <input type="text" placeholder="Address" required>
+        <br>
+        <br> 
+        <label for="StreetName">Street.Name:</Street></label>
+        <input type="text" placeholder="Street.name" required>
+        <br>
+        <br>
+        <label for="pincode">pincode:</label>
+        <input type="number" min="1" max="6" required>
+        <br>
+        <br>
+        <label for="State">State:</label>
+        <input type="text" pattern="[a-z]{0-9}" required>
+        <br>
+        <br>
+        <label for="Country">Country</label>
+        <input type="text" pattern="[a-z]{0-9}" required>
+        </fieldset>
+        <fieldset>
+            <legend>Course-Details</legend>
+            <label for="Name">Name of Institution:</label>
+            <input type="text" pattern="[a-z]{0-15}" required>
+            <br>
+            <br>
+            <label for="Course-Batch">Course-Batch:</label>
+            <input type="text" placeholder="online/offline" pattern="[a-z]{1-15}" required>
+            <br>
+            <br>
+            <label for="Select your Course">Select the Course:</label>
+            <select name="Skills" id="Skills">
+                <option value="Select">Select</option>
+                <option value="Full StackWeb Development">Full Stack Web Developer</option>
+                <option value="Java Developer">Java Developer</option>
+                <option value="Full Stack Java Development">Full Stack Java Developer</option>
+                <option value="Python Developer">Python Developer</option>
+            </select>
+            <br>
+            <br>
+            <label for="Address">Address</label>
+            <input type="text" placeholder="Address" pattern="[a-zA-Z0-9]{0-9}" required>
+            <br>
+            <br>
+            <textarea name="Comments" placeholder="Any-Doubts ask here" id="Comments" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Billing-Details</legend>
+            <label for="Credit/Debit">Credit/Debit Cards:</label>
+            <input type="number" pattern="[0-9]{0,9}" required>
+            <br>
+            <br>
+            <label for="CVV">CVV:</label>
+            <input type="number"  pattern="[0-9]{1,4}" required>
+            <br>
+            <br>
+            <label for="Expiry">Expiry-Date:</label>
+            <input type="date" placeholder="date" pattern="[0-3]{0,9}" required>
+            <br>
+            <br>
+            <input type="submit" value="submit" formaction="Task-2.html">
+        </fieldset>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
